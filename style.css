@@ -1,0 +1,215 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(218, 206, 206);
+    position: relative;
+}
+.navbar{
+    display:flex; /* todisplay side by side  */
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+    width: 85%;
+}
+.logo{
+    width: 130px;
+}
+.linkitem{
+    display: inline-block;  /* display horizontally */
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/* psuedo class */
+
+.links:hover{
+    color: red;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.titleh1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+#spn{
+    color: #ffa500;
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 13% 8% 0px 8%;
+}
+.heading{
+   text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    color: green;
+    font-size: 25px;
+}
+.aboutcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.aboutimage img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.aboutdetails{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informatics{
+    margin-top: 15px;
+}
+.infobox{
+    margin-bottom: 15px;
+}
+.infobox span{
+    margin-left: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skillcontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skillimage img{
+    width: 100%;
+    padding-left: 4rem;
+}
+.barcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.basebar{
+    width: 100%;
+    height: 1.5rem;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -6px;
+}
+.htmlbar{
+    width: 90%;
+    background-color: aqua;
+}
+.cssbar{
+    width: 99%;
+    background-color: aqua;
+}
+.jsbar{
+    width: 80%;
+    background-color: aqua;
+}
+.reactbar{
+    width: 98%;
+    background-color: aqua;
+}
+.iconset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+}
+.icon ,.uparrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px 10px;
+
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.iconset :hover{
+    background-image: linear-gradient(to left bottom,rgb(218, 10, 138),rgb(29, 72, 192));
+}
+.icon:hover i {
+    color: white;
+    animation: anm 1s;
+}
+@keyframes anm{
+    10% {transform:rotate(15deg);}
+    20% {transform: rotate(-15deg);}
+    30% {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}
+    50%{transform: skew(25deg);}
+    70%{transform: skew(-25deg);}
+
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.uparrow{
+    float: right;
+    background-image: linear-gradient(to left bottom,rgb(218, 10, 138),rgb(29, 72, 192));
+    
+}
